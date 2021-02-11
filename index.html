@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="aoi kubo" />
+  <meta name="description" content="久保碧衣のポートフォリオ" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <title>King W Stone | travel portfolio site</title>
+  <link rel="shortcut icon" href="./img/favicon.ico"/>	
+  <link rel="stylesheet" href="https://tomap.co/ZP_reset.css" />
+  <link rel="stylesheet" href="sass/style.css" media="all" />
+</head>
+<body class="body">
+  <header class="header flex">
+    <h1><a href="index.html"><img src="./img/logo-main.gray.png" alt="ロゴの写真" class="header-logo"></a></h1>
+    <nav class="header-nav">
+      <ul class="flex">
+        <li><a href="">Spring</a></li>
+        <li><a href="">Summer</a></li>
+        <li><a href="">Autumn</a></li>
+        <li><a href="">Winter</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="mv" id="js-rain">
+    <div class="mv-box">
+      <h2 class="mv-box-title">Life is just a journey.</h2>
+      <p class="mv-box-text">Twenty years from now you will be more disappointed by the things you didn’t do than by the ones you did do. So throw off the bowlines, sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream. Discover.</p>
+      <button id="openModal">Japanese</button>
+      <section id="modalArea" class="modalArea">
+        <div id="modalBg" class="modalBg"></div>
+        <div class="modalWrapper">
+          <div class="modalContents">
+            <h2>人生ってまさに旅ね</h2>
+            <p>今から20年後、あなたはやった事よりもやらなかったことに、より後悔するだろう。ゆえに、もやいを解き放て。安全な港から船を出せ。貿易風を帆に捕らえよ。探検せよ。夢をみよ。発見せよ。</p>
+            <p class="modalContents-text">
+            この言葉は私が旅行する時に大事にしている言葉です。幼いころから旅行に行った思い出を一つの形にしたくこのホームページを作成しました。
+            </p>
+          </div>
+          <div id="closeModal" class="closeModal">×</div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+
+  <footer class="footer"><small>&copy; 2021 King W Stone</small></footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="./js/raindrops.js"></script>
+  <script src="./js/main.js"></script>
+  <script>
+    $(function(){
+    	let $hoge = $('#js-rain');
+	    $hoge.raindrops({
+      color:'#fff',
+		  waveHeight: 100,
+		  canvasHeight: 40,
+		  rippleSpeed: 0.01,
+		  rippleSpeed: 0.05, 
+		  density: 0.04
+  	});
+  });
+  </script>
+</body>
+</html>
