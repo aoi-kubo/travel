@@ -23,13 +23,14 @@ a:hover {
   padding: 30px 0;
   width: 85%;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .title {
   font-weight: bold;
   font-size: 50px;
   color: transparent;
-  -webkit-text-stroke: 1px #888;
+  -webkit-text-stroke: 1px #3f5162;
   padding: 30px 0;
   text-align: center;
 }
@@ -62,7 +63,7 @@ a:hover {
   position: absolute;
   bottom: -155px;
   right: -75px;
-  transform: scale(0.54);
+  transform: scale(0.5);
 }
 
 .mv-box {
@@ -144,8 +145,80 @@ button {
   padding-top: 30px;
 }
 
+.spring .flex {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .spring-title {
   text-shadow: 3px 3px 0 #f7c7c8;
+}
+
+.spring-container {
+  position: relative;
+  width: 100%;
+  padding: 60px 30px 0;
+}
+
+.spring-card {
+  position: relative;
+  width: 29%;
+  height: 150px;
+  background: #fff1f1;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+  border-radius: 4px;
+}
+
+.spring-card:hover {
+  height: 420px;
+}
+
+.spring-card:hover .spring-content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+.spring-content {
+  position: relative;
+  margin-top: -80px;
+  padding: 10px 15px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.spring-content-text {
+  font-size: 0.75em;
+  padding-bottom: 15px;
+}
+
+.spring-content-mes {
+  font-size: 0.85em;
+}
+
+.spring-content-mes span {
+  font-weight: bold;
+}
+
+.spring-imgBox {
+  position: relative;
+  top: -60px;
+}
+
+.spring-imgBox img {
+  width: 80%;
+  border-radius: 4px;
+}
+
+.spring h4 {
+  padding-bottom: 10px;
 }
 
 .summer-title {
