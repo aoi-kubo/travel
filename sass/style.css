@@ -18,6 +18,22 @@ a:hover {
   flex-wrap: wrap;
 }
 
+.inner {
+  text-align: center;
+  padding: 30px 0;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 1px #888;
+  padding: 30px 0;
+  text-align: center;
+}
+
 .header {
   background: #e8e8e8;
   padding: 5px 10px;
@@ -50,7 +66,7 @@ a:hover {
 }
 
 .mv-box {
-  padding: 65px 80px 85px;
+  padding: 85px 80px 95px;
   width: 55%;
 }
 
@@ -122,6 +138,26 @@ button {
   padding-top: 20px;
   font-size: 0.8em;
   line-height: 20px;
+}
+
+.spring {
+  padding-top: 30px;
+}
+
+.spring-title {
+  text-shadow: 3px 3px 0 #f7c7c8;
+}
+
+.summer-title {
+  text-shadow: 3px 3px 0 #c7f5f7;
+}
+
+.autumn-title {
+  text-shadow: 3px 3px 0 #f7e2c7;
+}
+
+.winter-title {
+  text-shadow: 3px 3px 0 #dac7f7;
 }
 
 .footer {

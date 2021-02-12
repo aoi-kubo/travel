@@ -17,10 +17,10 @@
     <h1><a href="index.html"><img src="./img/logo-main.gray.png" alt="ロゴの写真" class="header-logo"></a></h1>
     <nav class="header-nav">
       <ul class="flex">
-        <li><a href="">Spring</a></li>
-        <li><a href="">Summer</a></li>
-        <li><a href="">Autumn</a></li>
-        <li><a href="">Winter</a></li>
+        <li><a href="#spring">Spring</a></li>
+        <li><a href="#summer">Summer</a></li>
+        <li><a href="#autumn">Autumn</a></li>
+        <li><a href="#winter">Winter</a></li>
       </ul>
     </nav>
   </header>
@@ -44,26 +44,32 @@
       </section>
     </div>
   </section>
-
+  <section class="spring">
+    <h3 class="spring-title title">Spring</h3>
+    <div class="flex inner">
+    </div>
+  </section>
+  <section class="summer">
+    <h3 class="summer-title title">Summer</h3>
+    <div class="flex inner">
+    </div>
+  </section>
+  <section class="autumn">
+    <h3 class="autumn-title title">Autumn</h3>
+    <div class="flex inner">
+    </div>
+  </section>
+  <section class="winter">
+    <h3 class="winter-title title">Winter</h3>
+    <div class="flex inner">
+    </div>
+  </section>
 
 
   <footer class="footer"><small>&copy; 2021 King W Stone</small></footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="./js/raindrops.js"></script>
-  <script src="./js/main.js"></script>
-  <script>
-    $(function(){
-    	let $hoge = $('#js-rain');
-	    $hoge.raindrops({
-        color:'#fff',
-		    waveHeight: 100,
-		    canvasHeight: 40,
-		    rippleSpeed: 0.01,
-		    rippleSpeed: 0.05, 
-		    density: 0.04
-  	    });
-      });
-  </script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="./js/raindrops.js"></script>
+	<script src="./js/main.js"></script>
 </body>
 </html>
