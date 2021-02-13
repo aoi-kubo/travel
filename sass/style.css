@@ -311,8 +311,26 @@ button {
   font-size: 0.7em;
 }
 
+.autumn {
+  position: relative;
+}
+
 .autumn-title {
   text-shadow: 3px 3px 0 #f7e2c7;
+}
+
+.autumn .inner {
+  width: 90%;
+}
+
+.autumn-card {
+  width: 22%;
+  height: 335px;
+  background-color: transparent;
+  perspective: 100px;
+  box-shadow: 0 2px 15px #adadad;
+  margin: 30px 0px 0;
+  padding: 5px;
 }
 
 .winter-title {
