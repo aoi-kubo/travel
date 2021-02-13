@@ -105,21 +105,29 @@ a:hover {
   cursor: pointer;
 }
 button {
-  color: #fff;
-  margin: 30px 15px 20px;
+  display: block;
   padding: 15px 40px;
-  background: #3f5162;
-  border: 1px solid #3f5162;
-  border-radius: 2px;
+  background: linear-gradient(to right, #3f5162 50%, #fff 50%);
+  background-size: 200% 100.5%;
+  background-position: right bottom;
+  border: none;
+  border-left: 0.2em solid #3f5162;
+  border-color: none;
+  margin: 30px 15px 20px;
   cursor: pointer;
   letter-spacing: 1px;
+  transition: all 0.5s ease-out;
+  &:hover {
+    background-position: left bottom;
+    color: #fff;
+  }
 }
 .modalContents {
   h2 {
     font-size: 1.5em;
     padding-bottom: 20px;
   }
-  p {
+  &-box-text {
     line-height: 30px;
   }
   &-text {
