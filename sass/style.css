@@ -37,7 +37,7 @@ a:hover {
 
 .header {
   background: #e8e8e8;
-  padding: 5px 10px;
+  padding: 10px 10px 5px;
 }
 
 .header.flex {
@@ -67,7 +67,7 @@ a:hover {
 }
 
 .mv-box {
-  padding: 85px 80px 95px;
+  padding: 85px 80px 105px;
   width: 55%;
 }
 
@@ -175,7 +175,7 @@ button {
 }
 
 .spring-card:hover {
-  height: 420px;
+  height: 390px;
 }
 
 .spring-card:hover .spring-content {
@@ -195,12 +195,13 @@ button {
 }
 
 .spring-content-text {
-  font-size: 0.75em;
+  font-size: 0.68em;
+  letter-spacing: 0.8px;
   padding-bottom: 15px;
 }
 
 .spring-content-mes {
-  font-size: 0.85em;
+  font-size: 0.8em;
 }
 
 .spring-content-mes span {
@@ -221,8 +222,93 @@ button {
   padding-bottom: 10px;
 }
 
+.summer {
+  box-sizing: border-box;
+}
+
+.summer .flex {
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .summer-title {
   text-shadow: 3px 3px 0 #c7f5f7;
+}
+
+.summer-container {
+  position: relative;
+  width: 85%;
+  padding: 20px 0;
+}
+
+.summer-card {
+  position: relative;
+  height: 255px;
+  background: #d9f7f8;
+  width: 40%;
+  margin: 30px;
+  display: flex;
+  border-radius: 20px;
+}
+
+.summer-card:hover .summer-imgBox {
+  height: 150px;
+  width: 150px;
+  left: -75px;
+  top: calc(50% - 75px);
+}
+
+.summer-card:hover .summer-imgBox img {
+  width: 80%;
+}
+
+.summer-imgBox {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  height: calc(100% - 20px);
+  width: calc(100% - 20px);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: 0.5s ease-in-out;
+}
+
+.summer-imgBox img {
+  width: 40%;
+}
+
+.summer-content {
+  position: absolute;
+  right: 0;
+  width: calc(100% - 75px);
+  height: 100%;
+  text-align: center;
+}
+
+.summer-content h4 {
+  padding-top: 20px;
+}
+
+.summer-content p {
+  font-size: 0.68em;
+  letter-spacing: 0.8px;
+  padding: 10px 20px;
+}
+
+.summer-content a {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 5px;
+  background: #fffd;
+  font-size: 0.7em;
 }
 
 .autumn-title {

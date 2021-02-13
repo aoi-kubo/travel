@@ -36,7 +36,7 @@ a:hover {
 
 .header {
   background: #e8e8e8;
-  padding: 5px 10px;
+  padding: 10px 10px 5px;
   &.flex {
     align-items: center;
   }
@@ -60,7 +60,7 @@ a:hover {
     transform: scale(0.5);
   }
   &-box {
-    padding: 85px 80px 95px;
+    padding: 85px 80px 105px;
     width: 55%;
     &-title {
       font-size: 3em;
@@ -158,7 +158,7 @@ button {
     transition: 0.5s ease-in-out;
     border-radius: 4px;
     &:hover {
-      height: 420px;
+      height: 390px;
     }
   } 
   &-card:hover .spring-content {
@@ -175,11 +175,12 @@ button {
     opacity: 0;
     transition: 0.3s ease-in-out;
     &-text {
-      font-size: 0.75em;
+      font-size: 0.68em;
+      letter-spacing: 0.8px;
       padding-bottom: 15px;
     }
     &-mes {
-      font-size: 0.85em;
+      font-size: 0.8em;
       span {
         font-weight: bold;
       }
@@ -199,9 +200,80 @@ button {
 }
 
 .summer {
+  box-sizing: border-box;
+  .flex {
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   &-title {
     text-shadow: 3px 3px 0 #c7f5f7;
   } 
+  &-container {
+    position: relative;
+    width: 85%;
+    padding: 20px 0;
+  }
+  &-card {
+    position: relative;
+    height: 255px;
+    background: #d9f7f8;
+    width: 40%;
+    margin: 30px;
+    display: flex;
+    border-radius: 20px;
+    &:hover .summer-imgBox {
+      height: 150px;
+      width: 150px;
+      left: -75px;
+      top: calc(50% - 75px);
+      img {
+        width: 80%;
+      }
+    }
+  }
+  &-imgBox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    height: calc(100% - 20px);
+    width: calc(100% - 20px);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: 0.5s ease-in-out;
+    img {
+      width: 40%;
+    }
+  }
+  &-content {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    text-align: center;
+    h4 {
+      padding-top: 20px;
+    }
+    p {
+      font-size: 0.68em;
+      letter-spacing: 0.8px;
+      padding: 10px 20px;
+    }
+    a {
+      display: inline-block;
+      padding: 8px 20px;
+      border-radius: 5px;
+      background: #fffd;
+      font-size: 0.7em;
+    }
+  }
 }
 .autumn {
   &-title {
