@@ -306,9 +306,17 @@ button {
 .summer-content a {
   display: inline-block;
   padding: 8px 20px;
-  border-radius: 5px;
-  background: #fffd;
+  border-radius: 3px;
+  background-color: #3f5162;
+  border: 1px solid #3f5162;
+  color: #fff;
   font-size: 0.7em;
+}
+
+.summer-content a:hover {
+  background-color: #fff;
+  border-color: #3f5162;
+  color: #3f5162;
 }
 
 .autumn {
@@ -327,10 +335,78 @@ button {
   width: 22%;
   height: 335px;
   background-color: transparent;
-  perspective: 100px;
+  perspective: 1000px;
   box-shadow: 0 2px 15px #adadad;
-  margin: 30px 0px 0;
   padding: 5px;
+}
+
+.autumn-card:hover .autumn-card-inner {
+  transform: rotateY(180deg);
+}
+
+.autumn-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  transform-style: preserve-3d;
+}
+
+.autumn-front, .autumn-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.autumn-back {
+  padding: 30px 10px;
+  background-color: #faeed8;
+  box-sizing: border-box;
+  transform: rotateY(180deg);
+}
+
+.autumn-back h4 {
+  padding-bottom: 15px;
+}
+
+.autumn-back p {
+  font-size: 0.8em;
+}
+
+.autumn-back a {
+  color: #3f5162;
+  margin-top: 10px;
+  background-color: #faeed8;
+  padding: 5px 40px;
+  border: 1px solid #3f5162;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.autumn-back a:hover {
+  color: #faeed8;
+}
+
+.autumn-back a:hover::before {
+  transform-origin: 50% 100%;
+  transform: scaleY(1);
+}
+
+.autumn-back a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #3f5162;
+  transform-origin: 50% 0%;
+  transform: scaleY(0);
+  transition: transform ease 0.3s;
 }
 
 .winter-title {
