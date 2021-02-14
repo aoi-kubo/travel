@@ -422,6 +422,70 @@ button:hover {
   text-shadow: 3px 3px 0 #dac7f7;
 }
 
+.winter .inner {
+  width: 90%;
+}
+
+.winter-card {
+  position: relative;
+  width: 23%;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
+.winter-card:hover .winter-front {
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.winter-card:hover .winter-back {
+  transform: perspective(500px) rotateY(360deg);
+}
+
+.winter-card-face {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: 2s ease-in-out;
+  transform: perspective(500px) rotateY(0deg);
+}
+
+.winter-front {
+  color: #fff;
+}
+
+.winter-front-first {
+  background: url(../img/felipe-giacometti.jpg);
+}
+
+.winter-front-second {
+  background: url(../img/sergey-mikheev.jpg);
+}
+
+.winter-front-third {
+  background: url(../img/shailee-garnier.jpg);
+}
+
+.winter-front-fourth {
+  background: url(../img/logan-weaver.jpg);
+}
+
+.winter-back {
+  background: #c7b1e9;
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.winter h4, .winter p {
+  text-transform: uppercase;
+  transform: perspective(500px) translateZ(50px);
+}
+
 .footer {
   text-align: center;
   font-size: 0.9rem;
