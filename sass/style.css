@@ -429,7 +429,7 @@ button:hover {
 .winter-card {
   position: relative;
   width: 23%;
-  height: 400px;
+  height: 380px;
   transform-style: preserve-3d;
 }
 
@@ -479,12 +479,11 @@ button:hover {
 .winter-back {
   background: #e8dff7;
   transform: perspective(500px) rotateY(180deg);
-  padding: 0 40px;
+  padding: 0 50px;
   box-sizing: border-box;
-  font-size: 0.68em;
 }
 
-.winter-subtitle, .winter-text {
+.winter-subtitle, .winter-top, .winter-text {
   text-transform: uppercase;
   transform: perspective(500px) translateZ(50px);
 }
@@ -495,6 +494,17 @@ button:hover {
   color: #3f5162;
   letter-spacing: 2px;
   text-shadow: 1px  1px 1px #ffffff, -1px  1px 1px #ffffff, 1px -1px 1px #ffffff, -1px -1px 1px #ffffff, 1px  0px 1px #ffffff, 0px  1px 1px #ffffff, -1px  0px 1px #ffffff, 0px -1px 1px #ffffff;
+}
+
+.winter-text {
+  font-size: 0.5em;
+}
+
+.winter-text span {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.4em;
+  margin-bottom: 10px;
 }
 
 .footer {

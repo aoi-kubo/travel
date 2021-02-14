@@ -378,7 +378,7 @@ button {
   &-card {
     position: relative;
     width: 23%;
-    height: 400px;
+    height: 380px;
     transform-style: preserve-3d;
     &:hover .winter-front {
       transform: perspective(500px) rotateY(180deg);
@@ -419,11 +419,10 @@ button {
   &-back {
     background: #e8dff7;
     transform: perspective(500px) rotateY(180deg);
-    padding: 0 40px;
+    padding: 0 50px;
     box-sizing: border-box;
-    font-size: 0.68em;
   }
-  &-subtitle, &-text {
+  &-subtitle, &-top, &-text {
     text-transform: uppercase;
     transform: perspective(500px) translateZ(50px);
   }
@@ -441,6 +440,15 @@ button {
         0px  1px 1px #ffffff,
         -1px  0px 1px #ffffff,
         0px -1px 1px #ffffff; 
+  }
+  &-text {
+    font-size: 0.5em;
+    span {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 1.4em;
+      margin-bottom: 10px;
+    }
   }
 }
 
