@@ -417,12 +417,30 @@ button {
     }
   }
   &-back {
-    background: #c7b1e9;
+    background: #e8dff7;
     transform: perspective(500px) rotateY(180deg);
+    padding: 0 40px;
+    box-sizing: border-box;
+    font-size: 0.68em;
   }
-  h4, p {
+  &-subtitle, &-text {
     text-transform: uppercase;
     transform: perspective(500px) translateZ(50px);
+  }
+  &-subtitle {
+    font-size: 1.3em;
+    display: inline-block;
+    color: #3f5162;
+    letter-spacing: 2px;
+    text-shadow: 
+        1px  1px 1px #ffffff,
+        -1px  1px 1px #ffffff,
+        1px -1px 1px #ffffff,
+        -1px -1px 1px #ffffff,
+        1px  0px 1px #ffffff,
+        0px  1px 1px #ffffff,
+        -1px  0px 1px #ffffff,
+        0px -1px 1px #ffffff; 
   }
 }
 
