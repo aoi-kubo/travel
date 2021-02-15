@@ -36,8 +36,14 @@ a:hover {
 }
 
 .header {
-  background: #e8e8e8;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 75px;
   padding: 10px 10px 5px;
+  background: #e8e8e8de;
 }
 
 .header.flex {
@@ -45,7 +51,7 @@ a:hover {
 }
 
 .header-logo {
-  width: 45%;
+  width: 40%;
   padding-left: 25px;
 }
 
@@ -53,8 +59,41 @@ a:hover {
   padding: 0 25px;
 }
 
+.header-nav li a {
+  display: inline-block;
+}
+
+.header #nav-toggle {
+  position: absolute;
+}
+
+.header .icon-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header .icon-btn .line {
+  width: 30px;
+  height: 5px;
+  background-color: #3f5162;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 960px) {
+  .header-nav {
+    display: none;
+  }
+  .header-btn {
+    display: flex;
+  }
+}
+
 .mv {
   background: #e8e8e8;
+  padding-top: 75px;
   position: relative;
 }
 

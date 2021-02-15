@@ -35,22 +35,62 @@ a:hover {
 }
 
 .header {
-  background: #e8e8e8;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 75px;
   padding: 10px 10px 5px;
+  background: #e8e8e8de;
   &.flex {
     align-items: center;
   }
   &-logo {
-    width: 45%;
+    width: 40%;
     padding-left: 25px;
   }
   &-nav li {
     padding: 0 25px;
+    a {
+      display: inline-block;
+    }
+  }
+  #nav-toggle {
+    position: absolute;
+  }
+  .icon-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    .line {
+      width: 30px;
+      height: 5px;
+      background-color: #3f5162;
+      margin: 5px;
+      border-radius: 5px;
+    }
   }
 }
 
+@media screen and (max-width: 960px) {
+  .header {
+    &-nav {
+      display: none;
+    }
+    &-btn {
+      display: flex;
+    }
+  }
+}
+
+
+
+
 .mv {
   background: #e8e8e8;
+  padding-top: 75px;
   position: relative;
   &::after {
     content: url(../img/Travelplans.png);
