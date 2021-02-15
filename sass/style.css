@@ -36,14 +36,14 @@ a:hover {
 }
 
 .header {
+  padding: 5px 10px 10px;
+  background: #e8e8e8ed;
   position: fixed;
   z-index: 10;
   top: 0;
-  right: 0;
   left: 0;
+  right: 0;
   height: 75px;
-  padding: 10px 10px 5px;
-  background: #e8e8e8de;
 }
 
 .header.flex {
@@ -51,8 +51,12 @@ a:hover {
 }
 
 .header-logo {
-  width: 40%;
+  width: 30%;
   padding-left: 25px;
+}
+
+.header-logo img {
+  width: 50%;
 }
 
 .header-nav li {
@@ -61,34 +65,6 @@ a:hover {
 
 .header-nav li a {
   display: inline-block;
-}
-
-.header #nav-toggle {
-  position: absolute;
-}
-
-.header .icon-btn {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.header .icon-btn .line {
-  width: 30px;
-  height: 5px;
-  background-color: #3f5162;
-  margin: 5px;
-  border-radius: 5px;
-}
-
-@media screen and (max-width: 960px) {
-  .header-nav {
-    display: none;
-  }
-  .header-btn {
-    display: flex;
-  }
 }
 
 .mv {

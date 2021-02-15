@@ -35,20 +35,23 @@ a:hover {
 }
 
 .header {
+  padding: 5px 10px 10px;
+  background: #e8e8e8ed;
   position: fixed;
   z-index: 10;
   top: 0;
-  right: 0;
   left: 0;
+  right: 0;
   height: 75px;
-  padding: 10px 10px 5px;
-  background: #e8e8e8de;
   &.flex {
     align-items: center;
   }
   &-logo {
-    width: 40%;
+    width: 30%;
     padding-left: 25px;
+    img {
+      width: 50%;
+    }
   }
   &-nav li {
     padding: 0 25px;
@@ -56,33 +59,13 @@ a:hover {
       display: inline-block;
     }
   }
-  #nav-toggle {
-    position: absolute;
-  }
-  .icon-btn {
-    position: absolute;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    .line {
-      width: 30px;
-      height: 5px;
-      background-color: #3f5162;
-      margin: 5px;
-      border-radius: 5px;
-    }
-  }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 985px) {
   .header {
-    &-nav {
-      display: none;
-    }
-    &-btn {
-      display: flex;
-    }
+
   }
+
 }
 
 
