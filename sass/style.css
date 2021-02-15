@@ -129,32 +129,6 @@ a:hover {
   transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 985px) {
-  .header-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 998;
-    background: #e8e8e8ed;
-    font-size: 2rem;
-    display: none;
-  }
-  .header-nav ul.flex {
-    display: block;
-    line-height: 80px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  #hamburger {
-    display: block;
-  }
-}
-
 .mv {
   background: #e8e8e8;
   padding-top: 75px;
@@ -171,11 +145,11 @@ a:hover {
 
 .mv-box {
   padding: 85px 80px 105px;
-  width: 55%;
 }
 
 .mv-box-title {
   font-size: 3em;
+  width: 55%;
 }
 
 .mv-box-text {
@@ -700,4 +674,42 @@ button:hover {
   text-align: center;
   font-size: 0.9rem;
   margin: 15px 0;
+}
+
+@media screen and (max-width: 985px) {
+  .header-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 998;
+    background: #e8e8e8ed;
+    font-size: 2rem;
+    display: none;
+  }
+  .header-nav ul.flex {
+    display: block;
+    line-height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  #hamburger {
+    display: block;
+  }
+  .mv-box {
+    padding: 50px 40px 105px;
+  }
+  .mv-box-title {
+    width: 100%;
+  }
+  .mv-box-text {
+    width: 40%;
+  }
+  .mv::after {
+    right: -150px;
+  }
 }
