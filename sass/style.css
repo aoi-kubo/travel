@@ -507,6 +507,92 @@ button:hover {
   margin-bottom: 10px;
 }
 
+.icon {
+  padding: 50px 0;
+}
+
+.icon .flex {
+  justify-content: center;
+}
+
+.icon ul {
+  position: relative;
+}
+
+.icon ul li {
+  position: relative;
+  color: #6b6b6b;
+}
+
+.icon ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 80px;
+  height: 80px;
+  margin: 0 15px;
+  font-size: 30px;
+  border-radius: 50%;
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
+.icon ul li a .fab {
+  position: relative;
+  z-index: 1;
+}
+
+.icon ul li a:hover {
+  transform: translateY(-20px);
+  box-shadow: inset -1px -1px 2px rgba(0, 0, 0, 0.2), 2px 24px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.icon ul li a::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.icon ul li:nth-child(1) a::before {
+  border: 2px solid #3B5998;
+}
+
+.icon ul li:nth-child(1) a:hover::before {
+  background-color: #3B5998;
+}
+
+.icon ul li:nth-child(2) a::before {
+  border: 2px solid #1DA1F2;
+}
+
+.icon ul li:nth-child(2) a:hover::before {
+  background-color: #1DA1F2;
+}
+
+.icon ul li:nth-child(3) a::before {
+  border: 2px solid #CF2E92;
+}
+
+.icon ul li:nth-child(3) a:hover::before {
+  background-color: #CF2E92;
+}
+
+.icon ul li:nth-child(4) a::before {
+  border: 2px solid 	#40C463;
+}
+
+.icon ul li:nth-child(4) a:hover::before {
+  background-color: #40C463;
+}
+
 .footer {
   text-align: center;
   font-size: 0.9rem;
