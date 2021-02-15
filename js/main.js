@@ -1,6 +1,13 @@
 'use strict';
 
 $(function () {
+
+	$("#hamburger").click(function () {
+    $(".header-nav").fadeToggle();
+    $("#hamburger").toggleClass("active");
+    $(".body").toggleClass("hidden");
+  });
+
   $('#openModal').click(function(){
       $('#modalArea').fadeIn();
   });
