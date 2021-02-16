@@ -149,10 +149,11 @@ a:hover {
 
 .mv-box-title {
   font-size: 3em;
-  width: 55%;
+  width: 60%;
 }
 
 .mv-box-text {
+  width: 60%;
   padding-top: 10px;
   padding-left: 15px;
 }
@@ -170,7 +171,6 @@ a:hover {
 .modalBg {
   width: 100%;
   height: 100%;
-  background-color: rgba(30, 30, 30, 0.9);
 }
 
 .modalWrapper {
