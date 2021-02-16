@@ -748,4 +748,17 @@ button:hover {
   .summer-content h4 {
     padding-top: 0px;
   }
+  .autumn-card {
+    width: 45%;
+    height: 350px;
+    margin-bottom: 20px;
+  }
+  .autumn-front img {
+    width: 90%;
+    height: 350px;
+  }
+  .autumn-back {
+    width: 90%;
+    left: 5%;
+  }
 }
