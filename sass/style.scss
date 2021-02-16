@@ -701,5 +701,14 @@ button {
     }
   }
 
+  .winter {
+    .flex {
+      justify-content: space-around;
+    }
+    &-card {
+      width: 43%;
+      margin-bottom: 20px;
+    }
+  }
 
 }
