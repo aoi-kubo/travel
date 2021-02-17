@@ -788,8 +788,11 @@ button {
         left: calc(50% - 60px);
       }
     }
-    &-imgBox img {
-      width: 50%;
+    &-imgBox {
+      background: rgba(255, 255, 255, 0.4);
+      img {
+       width: 50%;
+     }
     }
     &-content {
       width: 100%;
