@@ -842,6 +842,9 @@ button:hover {
     top: -70px;
     left: calc(50% - 60px);
   }
+  .summer-imgBox img {
+    width: 50%;
+  }
   .summer-content {
     width: 100%;
     top: 30px;
@@ -851,5 +854,18 @@ button:hover {
   }
   .summer-content p {
     font-size: 0.58em;
+  }
+  .autumn .inner {
+    width: 75%;
+  }
+  .autumn-card {
+    width: 100%;
+  }
+  .autumn-front img {
+    width: 100%;
+  }
+  .autumn-back {
+    width: 100%;
+    left: 0;
   }
 }

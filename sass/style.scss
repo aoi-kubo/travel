@@ -788,6 +788,9 @@ button {
         left: calc(50% - 60px);
       }
     }
+    &-imgBox img {
+      width: 50%;
+    }
     &-content {
       width: 100%;
       top: 30px;
@@ -797,6 +800,21 @@ button {
       p {
         font-size: 0.58em;
       }
+    }
+  }
+  .autumn {
+    .inner {
+      width: 75%;
+    }
+    &-card {
+      width: 100%;
+    }
+    &-front img {
+      width: 100%;
+    }
+    &-back {
+      width: 100%;
+      left: 0;
     }
   }
 }
