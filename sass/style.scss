@@ -105,7 +105,6 @@ a:hover {
   }
 }
 #hamburger.active {
-  background: #e8e8e8;
   span:nth-child(1) {
     top: 20px;
     transform: rotate(45deg);
@@ -790,7 +789,7 @@ button {
       }
     }
     &-imgBox {
-      background: rgba(255, 255, 255, 0.842);
+      background: #d9f7f8dc;
       img {
        width: 50%;
      }
