@@ -843,7 +843,7 @@ button:hover {
     left: calc(50% - 60px);
   }
   .summer-imgBox {
-    background: #d9f7f8;
+    background: #d9f7f8ef;
   }
   .summer-imgBox img {
     width: 50%;
