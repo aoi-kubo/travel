@@ -114,6 +114,10 @@ a:hover {
   top: 30px;
 }
 
+#hamburger.active {
+  background: #e8e8e8;
+}
+
 #hamburger.active span:nth-child(1) {
   top: 20px;
   transform: rotate(45deg);
@@ -802,7 +806,7 @@ button:hover {
     z-index: -1;
   }
   .mv-box {
-    padding: 20px 20px 40px;
+    padding: 15px 20px 40px;
     text-align: center;
   }
   .mv-box-title {
@@ -813,7 +817,7 @@ button:hover {
     width: 100%;
   }
   button {
-    margin: 30px auto 20px;
+    margin: 30px auto 10px;
   }
   .spring {
     padding-top: 15px;
@@ -843,7 +847,7 @@ button:hover {
     left: calc(50% - 60px);
   }
   .summer-imgBox {
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.842);
   }
   .summer-imgBox img {
     width: 50%;
