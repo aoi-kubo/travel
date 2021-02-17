@@ -47,7 +47,7 @@ a:hover {
   top: 0;
   left: 0;
   right: 0;
-  height: 75px;
+  height: 65px;
 }
 
 .header.flex {
@@ -131,7 +131,7 @@ a:hover {
 
 .mv {
   background: #e8e8e8;
-  padding-top: 75px;
+  padding-top: 65px;
   position: relative;
 }
 
@@ -767,5 +767,67 @@ button:hover {
   .winter-card {
     width: 43%;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    padding: 15px 0;
+  }
+  .header {
+    height: 50px;
+  }
+  .header-logo {
+    padding-left: 10px;
+  }
+  .header-logo img {
+    width: 40%;
+  }
+  .modalContents h2 {
+    font-size: 1.3em;
+  }
+  .modalContents-box-text {
+    font-size: 0.9em;
+    line-height: 25px;
+  }
+  .modalContents-text {
+    padding-top: 20px;
+    font-size: 0.75em;
+    line-height: 20px;
+  }
+  .mv {
+    padding-top: 50px;
+  }
+  .mv::after {
+    z-index: -1;
+  }
+  .mv-box {
+    padding: 30px 20px 50px;
+    text-align: center;
+  }
+  .mv-box-title {
+    font-size: 1.8em;
+  }
+  .mv-box-text {
+    padding-left: 0;
+    width: 100%;
+  }
+  button {
+    margin: 30px auto 20px;
+  }
+  .spring {
+    padding-top: 15px;
+  }
+  .spring-container {
+    padding: 30px 30px 0;
+  }
+  .spring-card {
+    width: 85%;
+  }
+  .spring-card:hover {
+    height: 280px;
+  }
+  .spring-card:hover .spring-content {
+    margin-top: -45px;
   }
 }

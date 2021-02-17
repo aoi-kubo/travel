@@ -47,7 +47,7 @@ a:hover {
   top: 0;
   left: 0;
   right: 0;
-  height: 75px;
+  height: 65px;
   &.flex {
     align-items: center;
   }
@@ -124,7 +124,7 @@ a:hover {
 
 .mv {
   background: #e8e8e8;
-  padding-top: 75px;
+  padding-top: 65px;
   position: relative;
   &::after {
     content: url(../img/Travelplans.png);
@@ -711,4 +711,70 @@ button {
     }
   }
 
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    padding: 15px 0;
+  }
+  .header {
+    height: 50px;
+    &-logo {
+      padding-left: 10px;
+      img {
+        width: 40%;
+      }
+    }
+  }
+  .modalContents {
+    h2 {
+      font-size: 1.3em;
+    }
+    &-box-text {
+      font-size: 0.9em;
+      line-height: 25px;
+    }
+    &-text {
+      padding-top: 20px;
+      font-size: 0.75em;
+      line-height: 20px;
+    }
+  }
+  .mv {
+    padding-top: 50px;
+    &::after {
+      z-index: -1;
+    }
+    &-box {
+      padding: 30px 20px 50px;
+      text-align: center;
+      &-title {
+        font-size: 1.8em;
+      }
+      &-text {
+        padding-left: 0;
+        width: 100%;
+      }
+    }
+  }
+  button {
+    margin: 30px auto 20px;
+  }
+  .spring {
+    padding-top: 15px;
+    &-container {
+      padding: 30px 30px 0;
+    }
+    &-card {
+      width: 85%;
+      &:hover {
+        height: 280px;
+      }
+      &:hover .spring-content {
+        margin-top: -45px;
+      }
+    }
+  }
+
+  
 }
