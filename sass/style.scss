@@ -775,6 +775,28 @@ button {
       }
     }
   }
-
-  
+  .summer {
+    &-container {
+      width: 80%;
+    }
+    &-card {
+      margin: 30px 0;
+      &:hover .summer-imgBox {
+        width: 120px;
+        height: 120px;
+        top: -70px;
+        left: calc(50% - 60px);
+      }
+    }
+    &-content {
+      width: 100%;
+      top: 30px;
+      h4 {
+        font-size: 0.9em;
+      }
+      p {
+        font-size: 0.58em;
+      }
+    }
+  }
 }

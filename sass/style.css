@@ -830,4 +830,26 @@ button:hover {
   .spring-card:hover .spring-content {
     margin-top: -45px;
   }
+  .summer-container {
+    width: 80%;
+  }
+  .summer-card {
+    margin: 30px 0;
+  }
+  .summer-card:hover .summer-imgBox {
+    width: 120px;
+    height: 120px;
+    top: -70px;
+    left: calc(50% - 60px);
+  }
+  .summer-content {
+    width: 100%;
+    top: 30px;
+  }
+  .summer-content h4 {
+    font-size: 0.9em;
+  }
+  .summer-content p {
+    font-size: 0.58em;
+  }
 }
